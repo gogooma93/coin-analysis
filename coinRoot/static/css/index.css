@@ -1,0 +1,41 @@
+:root {
+    --text-color: #f0f4f5;
+    --background-color: #263343;
+    --accent-color: #d49466;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Source Sans Pro';
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+.nav_container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_logo {
+    font-size: 150px;
+    color: var(--text-color);
+    margin: 0 auto;
+    
+}
+
+.nav_logo i {
+    color: var(--accent-color);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    {% block content %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/chart.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d263164389.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/chart.js' %}" defer></script>
+    <title>Coin Analysis | Chart</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <i class="fab fa-bitcoin"></i>
+            <a href="">Coin Analysis</a>
+        </div>
+        <ul class="navbar_menu">
+            <li><a href="{% url 'coinanalysis:home' %}">Home</a></li>
+            <li><a href="{% url 'coinanalysis:coins' %}">Coin</a></li>
+            <li><a href="{% url 'coinanalysis:chart' %}">Chart</a></li>
+            <li><a href="{% url 'coinanalysis:qna' %}">QnA</a></li>
+        </ul>
+        <ul class="navbar_icons">
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+        </ul>
+        <a href="#" class="navbar_toggleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <div class="container">
+        <img src="{% static 'images/bitcoin_exchange_rate.png' %}" width=800, height=400 >
+    </div>
+    {% endblock content %}
+    </body>
+</html>
