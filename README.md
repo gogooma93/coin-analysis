@@ -8,4 +8,3 @@
 4.Development Environment: Windows 10, Ubuntu Linux  
 5.Etc: MySQL Workbench, VS code, Anaconda, Jupyter notebook, VMware 
 
-## 2. 웹사이트 화면 구성
